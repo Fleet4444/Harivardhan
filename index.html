@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="SkillConnect: Learn local skills from local experts."
+    />
+    <title>SkillConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-red': '#cb4a40',
+              'brand-green': '#7cb852',
+              'brand-teal': '#478a9c',
+              'brand-yellow': '#f2b733',
+              'brand-dark': '#1A535C',
+              'brand-light': '#F7FFF7',
+              'brand-text-dark': '#58595b',
+              'brand-text-light': '#6d6e71',
+              
+              // Alias old names to new logo colors
+              'brand-primary': '#cb4a40', // Formerly #FF6B6B
+              'brand-secondary': '#478a9c', // Formerly #4ECDC4
+              'brand-accent': '#f2b733', // Formerly #FFE66D
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
